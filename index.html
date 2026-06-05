@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ML Systems Notes</title>
+<meta name="description" content="Notes on machine-learning systems performance — compute, memory, and communication.">
+<style>
+  :root{--ink:#1f2937;--muted:#6b7280;--accent:#4f46e5;--link:#2563eb;--line:#e5e7eb;--soft:#f9fafb;--bg:#fff}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:72px 22px 96px}
+  header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:40px}
+  h1{font-size:2.1rem;letter-spacing:-.02em;margin:0 0 .3em}
+  .tagline{color:var(--muted);font-size:1.08rem;margin:0}
+  .accent{color:var(--accent)}
+  .posts{display:flex;flex-direction:column;gap:26px}
+  .card{border:1px solid var(--line);border-radius:12px;padding:24px 26px;transition:box-shadow .15s,border-color .15s}
+  .card:hover{box-shadow:0 4px 18px rgba(0,0,0,.06);border-color:#d6d6e3}
+  .card .meta{font-size:.8rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:.5em}
+  .card h2{font-size:1.4rem;line-height:1.25;margin:0 0 .35em}
+  .card h2 a{color:#111827;text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .card p{color:var(--ink);margin:.2em 0 1.1em;font-size:1.02rem}
+  .actions a{display:inline-block;font-size:.95rem;font-weight:600;color:var(--accent);text-decoration:none;
+    border:1px solid var(--accent);border-radius:8px;padding:.4em .9em;margin-right:.6em}
+  .actions a.secondary{color:var(--link);border-color:var(--line)}
+  .actions a:hover{background:var(--accent);color:#fff}
+  .actions a.secondary:hover{background:var(--soft);color:var(--link)}
+  footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+  footer a{color:var(--link);text-decoration:none}
+  @media (max-width:640px){.wrap{padding:48px 18px 72px}h1{font-size:1.8rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>ML Systems <span class="accent">Notes</span></h1>
+    <p class="tagline">Learning-sharing notes on machine-learning systems &amp; performance.</p>
+  </header>
+
+  <main class="posts">
+    <article class="card">
+      <div class="meta">Performance · GPUs</div>
+      <h2><a href="blog.html">The Three Currencies of ML Performance</a></h2>
+      <p>One mental model for why a training or inference run is slow, and which knob actually fixes it —
+         framing throughput through <strong>compute</strong>, <strong>memory</strong>, and <strong>communication</strong>,
+         anchored on MFU and the roofline.</p>
+      <div class="actions">
+        <a href="blog.html">Read the post →</a>
+        <a class="secondary" href="slides.html">Slides</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    More notes coming. Built as plain HTML — no tracking, just ideas.
+  </footer>
+</div>
+</body>
+</html>
